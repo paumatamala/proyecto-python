@@ -1,11 +1,9 @@
 from flask import Flask
 app = Flask(__name__)
 
-# esta es la función suma
 def suma(a,b):
   return a+b
 
-# Este es el endpoint
 @app.route("/")
 def hello():
     res = suma(3,2)
