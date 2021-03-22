@@ -1,6 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 
+# esta es la función suma
 def suma(a,b):
   return a+b
 
