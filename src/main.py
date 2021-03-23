@@ -5,6 +5,7 @@ app = Flask(__name__)
 def suma(a,b):
   return a+b
 
+# este es el endpoint
 @app.route("/")
 def hello():
     res = suma(3,2)
