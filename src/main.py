@@ -4,12 +4,13 @@ app = Flask(__name__)
 # esto es un comentario
 def suma(a,b):
   resultado = a+b
-  return a+b
+  return a+b+resultado
 
 # este es el endpoint
 @app.route("/")
 def hello():
     res = suma(3,2)
+    #Comentario
     return "Hello World! %s" % (res)
 
 if __name__ == "__main__":
